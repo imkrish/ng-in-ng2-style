@@ -1,14 +1,14 @@
-import 'bootstrap-css-only'
-import 'normalize/index.styl'
-
 import * as angular from 'angular'
 import { AppComponent } from './app.component'
 
-angular.module(
-        'app',
-        [
+import 'angular-ui-bootstrap'
+import 'bootstrap-css-only'
+import 'normalize/index.styl'
+import { BooksModule } from './components/books/books'
 
-        ]
-    )
-    .component('app', AppComponent)
+angular.module('app',[
+    'ui.bootstrap',
+    BooksModule.name
+])
+.component('app', AppComponent)
 
