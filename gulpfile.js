@@ -4,6 +4,7 @@ const browserSync = require('browser-sync')
 const gulp = require('gulp')
 
 const reload = () => browserSync.reload()
+
 const root = 'client'
 
 // helper method for resolving paths
@@ -28,6 +29,9 @@ const paths = {
 gulp.task('webpack', () => {
   return gulp.src(paths.entry)
     .pipe(webpackStream(require('./webpack.config')))
+    .on('error', function(err) {
+      this.emit('end')
+    })
     .pipe(gulp.dest(paths.output))
 })
 
