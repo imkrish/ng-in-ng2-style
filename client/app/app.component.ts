@@ -1,5 +1,5 @@
 const template = require('./app.html')
-import './app.styl'
+import './app.scss'
 
 export const AppComponent = {
     template

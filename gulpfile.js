@@ -16,6 +16,7 @@ const resolveToApp = (glob) => {
 const paths = {
   ts: resolveToApp('**/*!(.spec.ts).ts'), // exclude spec files
   styl: resolveToApp('**/*.styl'), // stylesheets
+  scss: resolveToApp('**/*.scss'), // scss,
   html: [
     resolveToApp('**/*.html'),
     path.join(root, 'index.html')
@@ -44,7 +45,7 @@ gulp.task('serve', ['webpack'], () => {
 })
 
 gulp.task('watch', ['serve'], () => {
-  const allPaths = [].concat(paths.html, [paths.styl])
+  const allPaths = [].concat([paths.ts], [paths.scss], paths.html, [paths.styl])
   gulp.watch(allPaths, ['reload'])
 })
 
