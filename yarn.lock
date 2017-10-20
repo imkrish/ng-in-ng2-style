@@ -486,9 +486,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-bootstrap-css-only@4.0.0-beta:
-  version "4.0.0-beta"
-  resolved "https://registry.yarnpkg.com/bootstrap-css-only/-/bootstrap-css-only-4.0.0-beta.tgz#e7d4080076ff0559f18f5e9ef497fffedb9d6817"
+bootstrap-css-only@123:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/bootstrap-css-only/-/bootstrap-css-only-3.3.7.tgz#68a15925aa7b9b0fc0feb73ff85d8b8c3989c16d"
 
 brace-expansion@^1.0.0, brace-expansion@^1.1.7:
   version "1.1.8"
