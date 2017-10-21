@@ -1,0 +1,36 @@
+<div class="modal-header">
+  <h3 class="modal-title" id="modal-title">Register</h3>
+</div>
+<div class="modal-body" id="modal-body">
+  <div class="form-group">
+    <label>First Name:</label>
+    <input type="text" ng-model="$ctrl.userInfo.firstName" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Last Name:</label>
+    <input type="text" ng-model="$ctrl.userInfo.lastName" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Email:</label>
+    <input type="text" ng-model="$ctrl.userInfo.email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Sex:</label>
+    <select class="form-control" ng-model="$ctrl.userInfo.sex" ng-options="s for s in ['M', 'F']"></select>
+  </div>
+
+  <div class="form-group">
+    <label>Birthdate:</label>
+    <div class="input-group">
+        <input type="text" class="form-control" uib-datepicker-popup="{{'dd-MMMM-yyyy'}}" ng-model="$ctrl.userInfo.birthdate"
+                is-open="$ctrl.datePickerOpen" ng-required="true" close-text="Close" alt-input-formats="altInputFormats">
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default" ng-click="$ctrl.datePickerOpen = !$ctrl.datePickerOpen"><i class="glyphicon glyphicon-calendar"></i></button>
+        </span>
+      </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+  <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+</div>

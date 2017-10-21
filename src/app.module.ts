@@ -12,7 +12,6 @@ import 'bootstrap-css-only'
 import 'normalize/index.styl'
 import { DashboardModule } from './dashboard/dashboard.module'
 
-
 angular.module('app', [
     'ui.router',
     'ui.bootstrap',
