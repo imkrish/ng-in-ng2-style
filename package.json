@@ -42,7 +42,7 @@
     "webpack-stream": "4.0.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --content-base client/",
+    "start": "webpack-dev-server --content-base build/",
     "test": "karma start"
   }
 }

@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'sourcemap',
   entry: "./client/app/app.ts",
   output: {
-    path: __dirname + '/client',
+    path: __dirname + '/build',
     filename: 'bundle.js'
   },
   resolve: {
