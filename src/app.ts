@@ -6,7 +6,6 @@ import 'angular-ui-bootstrap'
 import 'angular-ui-router'
 import 'bootstrap-css-only'
 import 'normalize/index.styl'
-import { HomeModule } from './home/home.module'
 import { SharedModule } from './shared/shared.module'
 import { DashboardModule } from './dashboard/dashboard.module'
 import { MainModule } from './main/main.module'
@@ -16,7 +15,6 @@ angular.module('imkrishApp', [
     'ui.router',
     'ui.bootstrap',
     MainModule.name,
-    HomeModule.name,
     SharedModule.name,
     DashboardModule.name
 ])
