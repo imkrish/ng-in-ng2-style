@@ -61,6 +61,6 @@
     "protractor": "protractor ./protractor.conf.js",
     "pretest": "serenity update",
     "report": "serenity run",
-    "test": "failsafe clean protractor"
+    "test": "failsafe clean protractor report"
   }
 }
