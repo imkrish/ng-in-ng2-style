@@ -12,6 +12,11 @@ export class AppConfig {
             name: 'main.home',
             url: '/home',
             component: 'home'
+        },
+        {
+            name: 'main.about',
+            url: '/about',
+            component: 'about'
         }
     ]
 
