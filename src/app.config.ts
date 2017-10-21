@@ -3,20 +3,27 @@ import { IStateProvider, IState, IUrlRouterProvider } from 'angular-ui-router'
 
 export class AppConfig {
     states: IState[] = [
+        // Main
         {
             name: 'main',
             url: '/main',
             component: 'main'
         },
+            {
+                name: 'main.home',
+                url: '/home',
+                component: 'home'
+            },
+            {
+                name: 'main.about',
+                url: '/about',
+                component: 'about'
+            },
+        // Dashboard
         {
-            name: 'main.home',
-            url: '/home',
-            component: 'home'
-        },
-        {
-            name: 'main.about',
-            url: '/about',
-            component: 'about'
+            name: 'dashboard',
+            url: '/dashboard',
+            component: 'dashboard'
         }
     ]
 
