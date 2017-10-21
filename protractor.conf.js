@@ -1,7 +1,16 @@
-const crew = require('serenity-js/lib/stage_crew')
+const crew         = require('serenity-js/lib/stage_crew')
+const glob         = require('glob')
+const protractor   = require.resolve('protractor')
+const node_modules = protractor.substring(0, protractor.lastIndexOf('node_modules') + 'node_modules'.length)
+const seleniumJar  = glob.sync(`${node_modules}/protractor/**/selenium-server-standalone-*.jar`).pop()
 
 exports.config = {
-  // Framework definition - tells Protractor to use Serenity/JS
+  baseUrl: 'http://todomvc.com',
+  seleniumServerJar: seleniumJar,
+  allScriptsTimeout: 110000,
+  disableChecks: true,
+  ignoreUncaughtExceptions: true,
+
   framework: 'custom',
   frameworkPath: require.resolve('serenity-js'),
   specs: ['features/**/*.feature'],
@@ -19,7 +28,16 @@ exports.config = {
       crew.consoleReporter(),
     ],
     dialect: 'cucumber',
+    stageCueTimeout: 30 * 1000
   },
 
-  stageCueTimeout: 30 * 1000
+  capabilities: {
+    browserName: 'chrome',
+    chromeOptions: {
+        args: [
+            'disable-infobars'
+        ]
+    }
+}
+
 }
