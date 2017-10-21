@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   devtool: 'sourcemap',
-  entry: "./src/app.module.ts",
+  entry: "./src/app.ts",
   output: {
     path: __dirname + '/build',
     filename: 'bundle.js'

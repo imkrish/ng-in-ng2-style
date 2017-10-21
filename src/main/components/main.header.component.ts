@@ -1,8 +1,7 @@
 import { IComponentOptions } from 'angular'
-import * as angular from 'angular'
-const template = require('./app-header.component.html')
+const template = require('./main-header.component.html')
 
-export const AppHeaderComponent: IComponentOptions = {
+export const MainHeaderComponent: IComponentOptions = {
     template,
     bindings: {
         isNavCollapsed: '<',

@@ -1,8 +1,8 @@
 import { IComponentController, IComponentOptions } from 'angular'
-import { ModalService } from './shared/modals/modal.service'
-const template = require('./app.html')
+import { ModalService } from '../shared/modals/modal.service'
+const template = require('./main.html')
 
-class AppController implements IComponentController {
+class MainController implements IComponentController {
     isNavCollapsed: boolean
 
     constructor(private modalService: ModalService) {
@@ -10,7 +10,7 @@ class AppController implements IComponentController {
         this.isNavCollapsed = true
     }
 
-    toggleNavCollapsed = (name: string) => {
+    toggleNavCollapsed = () => {
         this.isNavCollapsed = !this.isNavCollapsed
     }
 
@@ -23,8 +23,8 @@ class AppController implements IComponentController {
     }
 }
 
-export const AppComponent: IComponentOptions = {
+export const MainComponent: IComponentOptions = {
     template,
-    controller: AppController,
+    controller: MainController,
     controllerAs: '$ctrl'
 }

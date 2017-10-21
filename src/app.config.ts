@@ -1,5 +1,5 @@
 import { ILocationProvider } from 'angular'
-import { IStateProvider, IState, IUrlRouterProvider } from 'angular-ui-router'
+import { IStateProvider, IState } from 'angular-ui-router'
 
 export class AppConfig {
     states: IState[] = [
@@ -9,7 +9,6 @@ export class AppConfig {
 
     constructor(
         private $stateProvider: IStateProvider,
-        private $urlRouterProvider: IUrlRouterProvider,
         private $locationProvider: ILocationProvider
     ) {
         this.runConfig()
