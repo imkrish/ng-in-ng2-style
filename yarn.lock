@@ -20,7 +20,7 @@
   dependencies:
     "@types/angular" "*"
 
-"@types/angular-ui-router@1.1.40":
+"@types/angular-ui-router@^1.1.40":
   version "1.1.40"
   resolved "https://registry.yarnpkg.com/@types/angular-ui-router/-/angular-ui-router-1.1.40.tgz#d8a10fe4af86a069f8c3302946363f1149e5a6b3"
   dependencies:
@@ -140,6 +140,16 @@
     "@types/node" "*"
     "@types/tapable" "*"
     "@types/uglify-js" "*"
+
+"@uirouter/angularjs@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@uirouter/angularjs/-/angularjs-1.0.10.tgz#e18b0b65cd0d2d87165fad80294acfb2dc5e5277"
+  dependencies:
+    "@uirouter/core" "5.0.11"
+
+"@uirouter/core@5.0.11":
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/@uirouter/core/-/core-5.0.11.tgz#bec461fcda767d79c98f6647cc9313ef9e5de03a"
 
 abbrev@1:
   version "1.1.1"
@@ -5106,7 +5116,7 @@ tslib@^1.7.1:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.8.0.tgz#dc604ebad64bcbf696d613da6c954aa0e7ea1eb6"
 
-tslint@^5.8.0:
+tslint@5.8.0:
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.8.0.tgz#1f49ad5b2e77c76c3af4ddcae552ae4e3612eb13"
   dependencies:
@@ -5377,7 +5387,7 @@ webpack-dev-middleware@^1.11.0:
     range-parser "^1.0.3"
     time-stamp "^2.0.0"
 
-webpack-dev-server@^2.9.3:
+webpack-dev-server@2.9.3:
   version "2.9.3"
   resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-2.9.3.tgz#f0554e88d129e87796a6f74a016b991743ca6f81"
   dependencies:
@@ -5408,7 +5418,7 @@ webpack-dev-server@^2.9.3:
     webpack-dev-middleware "^1.11.0"
     yargs "^6.6.0"
 
-webpack-livereload-plugin@^1.0.0:
+webpack-livereload-plugin@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/webpack-livereload-plugin/-/webpack-livereload-plugin-1.0.0.tgz#c197397ebe2a922d91da81642e000eb52c949299"
   dependencies:
