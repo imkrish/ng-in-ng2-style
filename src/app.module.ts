@@ -10,13 +10,15 @@ import 'angular-ui-bootstrap'
 import 'angular-ui-router'
 import 'bootstrap-css-only'
 import 'normalize/index.styl'
+import { DashboardModule } from './dashboard/dashboard.module'
 
 
 angular.module('app', [
     'ui.router',
     'ui.bootstrap',
     HomeModule.name,
-    SharedModule.name
+    SharedModule.name,
+    DashboardModule.name
 ])
 .component('app', AppComponent)
 .config(($stateProvider: IStateProvider, $urlRouterProvider: IUrlRouterProvider, $locationProvider: ILocationProvider) =>

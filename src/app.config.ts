@@ -25,7 +25,7 @@ export class AppConfig {
 
     private static dashboardState(): IState {
         return {
-            name: '#dashboard', url: '/dashboard', template: 'hahah'
+            name: '#dashboard', url: '/dashboard', template: '<dashboard></dashboard>'
         }
     }
 
