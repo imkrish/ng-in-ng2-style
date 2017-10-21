@@ -4,8 +4,7 @@ import { IStateProvider, IState, IUrlRouterProvider } from 'angular-ui-router'
 export class AppConfig {
     states: IState[] = [
         { name: 'home', url: '/', template: '<home></home>' },
-        { name: '#dashboard', url: '/dashboard', template: '<dashboard></dashboard>' },
-        { name: '#register', url: '/register', template: 'register' }
+        { name: 'dashboard', url: '/dashboard', template: '<dashboard></dashboard>' }
     ]
 
     constructor(

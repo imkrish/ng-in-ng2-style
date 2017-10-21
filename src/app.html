@@ -1,5 +1,10 @@
 <div>
-  <app-header is-nav-collapsed="$ctrl.isNavCollapsed" toggle-nav-collapsed="$ctrl.toggleNavCollapsed"></app-header>
+  <app-header
+    is-nav-collapsed="$ctrl.isNavCollapsed"
+    toggle-nav-collapsed="$ctrl.toggleNavCollapsed"
+    open-register-modal="$ctrl.openRegisterModal"
+  >
+  </app-header>
   <ui-view></ui-view>
 </div>
 

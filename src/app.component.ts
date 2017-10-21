@@ -11,6 +11,10 @@ class AppController implements IComponentController {
     toggleNavCollapsed(name: string) {
         this.isNavCollapsed = !this.isNavCollapsed
     }
+
+    openRegisterModal() {
+        console.log('openRegisterModal')
+    }
 }
 
 export const AppComponent: IComponentOptions = {

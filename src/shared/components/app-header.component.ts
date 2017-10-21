@@ -6,6 +6,7 @@ export const AppHeaderComponent: IComponentOptions = {
     template,
     bindings: {
         isNavCollapsed: '<',
-        toggleNavCollapsed: '='
+        toggleNavCollapsed: '=',
+        openRegisterModal: '='
     }
 }
