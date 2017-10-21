@@ -1,11 +1,12 @@
 import * as angular from 'angular'
 import { AppComponent } from './app.component'
+import { BooksModule } from './components/books/books'
+import { ModalModule } from './common/modal/modal'
 
+import '../index.html'
 import 'angular-ui-bootstrap'
 import 'bootstrap-css-only'
 import 'normalize/index.styl'
-import { BooksModule } from './components/books/books'
-import { ModalModule } from './common/modal/modal'
 
 angular.module('app',[
     'ui.bootstrap',
@@ -13,4 +14,3 @@ angular.module('app',[
     ModalModule.name
 ])
 .component('app', AppComponent)
-
