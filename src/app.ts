@@ -1,15 +1,16 @@
 import * as angular from 'angular'
-import { IStateProvider } from 'angular-ui-router'
+import { IStateProvider, IUrlRouterProvider } from 'angular-ui-router'
 import { ILocationProvider } from 'angular'
 import '../build/index.html'
 import 'angular-ui-bootstrap'
-import 'angular-ui-router'
+import '@uirouter/angularjs'
 import 'bootstrap-css-only'
 import 'normalize/index.styl'
 import { SharedModule } from './shared/shared.module'
 import { DashboardModule } from './dashboard/dashboard.module'
 import { MainModule } from './main/main.module'
 import { AppConfig } from './app.config'
+import { AppComponent } from './app.component'
 
 angular.module('imkrishApp', [
     'ui.router',
@@ -18,6 +19,7 @@ angular.module('imkrishApp', [
     SharedModule.name,
     DashboardModule.name
 ])
-.config(($stateProvider: IStateProvider, $locationProvider: ILocationProvider) =>
-    new AppConfig($stateProvider, $locationProvider)
+.component('app', AppComponent)
+.config(($stateProvider: IStateProvider, $locationProvider: ILocationProvider, $urlRouterProvider: IUrlRouterProvider) =>
+    new AppConfig($stateProvider, $locationProvider, $urlRouterProvider)
 )

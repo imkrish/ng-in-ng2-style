@@ -14,13 +14,13 @@
   dependencies:
     "@types/angular" "*"
 
-"@types/angular-ui-bootstrap@^0.13.46":
+"@types/angular-ui-bootstrap@0.13.46":
   version "0.13.46"
   resolved "https://registry.yarnpkg.com/@types/angular-ui-bootstrap/-/angular-ui-bootstrap-0.13.46.tgz#67b2bc2801cdaec515567840c9d82cc649c34656"
   dependencies:
     "@types/angular" "*"
 
-"@types/angular-ui-router@^1.1.40":
+"@types/angular-ui-router@1.1.40":
   version "1.1.40"
   resolved "https://registry.yarnpkg.com/@types/angular-ui-router/-/angular-ui-router-1.1.40.tgz#d8a10fe4af86a069f8c3302946363f1149e5a6b3"
   dependencies:
@@ -235,13 +235,7 @@ angular-ui-bootstrap@2.5.6:
   version "2.5.6"
   resolved "https://registry.yarnpkg.com/angular-ui-bootstrap/-/angular-ui-bootstrap-2.5.6.tgz#23937322ec641a6fbee16498cc32452aa199e7c5"
 
-angular-ui-router@0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-0.4.3.tgz#6c29546fe50b8d2f74614dcb8660d6fc40d6e167"
-  dependencies:
-    angular "^1.0.8"
-
-angular@1.6.6, angular@^1.0.8:
+angular@1.6.6:
   version "1.6.6"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.6.tgz#fd5a3cfb437ce382d854ee01120797978527cb64"
 
