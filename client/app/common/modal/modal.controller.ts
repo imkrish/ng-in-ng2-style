@@ -1,7 +1,6 @@
 import { IModalInstanceService } from 'angular-ui-bootstrap'
 import { IScope, IComponentController } from 'angular'
 
-
 export class ModalController implements IComponentController {
     selected: string
     items: string[]

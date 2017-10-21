@@ -8,7 +8,7 @@ import 'angular-ui-bootstrap'
 import 'bootstrap-css-only'
 import 'normalize/index.styl'
 
-angular.module('app',[
+angular.module('app', [
     'ui.bootstrap',
     BooksModule.name,
     ModalModule.name

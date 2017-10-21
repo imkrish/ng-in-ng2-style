@@ -9,5 +9,5 @@ export const ModalComponent = {
         resolve: '<',
         close: '&',
         dismiss: '&'
-	},
+    }
 }
