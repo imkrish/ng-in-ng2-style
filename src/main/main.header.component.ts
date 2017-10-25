@@ -6,6 +6,7 @@ export const MainHeaderComponent: IComponentOptions = {
     bindings: {
         isNavCollapsed: '<',
         toggleNavCollapsed: '=',
-        openRegisterModal: '='
+        openRegisterModal: '=',
+        openLoginForm: '='
     }
 }

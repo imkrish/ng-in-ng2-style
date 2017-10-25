@@ -21,6 +21,13 @@ class MainController implements IComponentController {
             (result) => console.log(result)
         )
     }
+
+    openLoginForm = () => {
+        this.modalService.openModalForm(
+            ['haha'],
+            () => console.log('test')
+        )
+    }
 }
 
 export const MainComponent: IComponentOptions = {
