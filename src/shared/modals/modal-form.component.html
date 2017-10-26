@@ -1,3 +1,7 @@
 <form>
   <h1>test</h1>
+  {{ $ctrl.inputs.length }}
+  <div ng-repeat="input in $ctrl.inputs">
+      <div ng-bind-html="input.template" />
+  </div>
 </form>

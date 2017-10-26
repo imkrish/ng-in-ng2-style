@@ -1,4 +1,5 @@
 import { IModalService } from 'angular-ui-bootstrap'
+import { TextInputComponent } from '../inputs/text/text-input.component'
 
 export class ModalService {
     static $inject = ['$uibModal']
@@ -19,7 +20,7 @@ export class ModalService {
     openModalForm = (inputs: any[], callback: (result: any) => void) => {
         this.$uibModal.open({
             resolve: {
-                inputs: () => inputs
+                inputs: () => [new TextInputComponent()]
             },
             component: 'modal-form'
         })
